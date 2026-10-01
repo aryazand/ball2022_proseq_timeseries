@@ -6,9 +6,9 @@ samplesheet: "config/samples.tsv"
 
 get_fastq:
   PE: true
-  tool: "fastq_dump"
+  tool: "fasterq_dump"
   fastq_dump:
-    extra: "-X 50000"
+    extra: ""
   fasterq_dump:
     extra: ""
 trimming:
@@ -47,6 +47,16 @@ genome:
     datasets:
       genbank:
       assembly: "GCF_000001405.40"
+      extra: ""
+  spodoptera:
+    source: "ncbi" # local vs ncbi database
+    prefix:
+    local:
+      fasta:
+      gff:
+    datasets:
+      genbank:
+      assembly: "GCF_023101765.2"
       extra: ""
 
 # Configs for alignment tools
@@ -87,6 +97,7 @@ mapping_postprocessing:
   filter:
     cmv: ""
     human: ""
+    spodoptera: ""
 
 # Configs for mapping statistics
 mapping_stats:
@@ -100,6 +111,7 @@ mapping_stats:
     genome_size:
       cmv: 236000
       human: 3130250755
+      spodoptera: 400000000
     extra: "--binSize 1 --normalizeUsing CPM --verbose"
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -121,9 +133,11 @@ jbrowse:
   add_assembly:
     cmv: "--alias 'cmv_tb40' --displayName 'CMV_TB40' --force"
     human: "--alias 'human' --displayName 'Human' --force"
+    spodoptera: "--alias 'spodoptera' --displayName 'Spodoptera' --force"
   add_anno:
     cmv: "--name CMV_TB40_Annotation --force"
     human: "--name Human_Annotation --force"
+    spodoptera: "--name Spodoptera_Annotation --force"
   add_bw:
     extra: "--force"
   add_cram:

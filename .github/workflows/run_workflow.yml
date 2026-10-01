@@ -70,7 +70,7 @@ jobs:
           args: >-
             --cores all
             --printshellcmds
-            --software-deployment-method conda
+            --software-deployment-method apptainer
             --set-resources star_align:mem_mb=38000
             --set-resources star_align:threads=4 
             --default-storage-provider fs

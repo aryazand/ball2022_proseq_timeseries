@@ -71,6 +71,7 @@ jobs:
             --cores all
             --printshellcmds
             --software-deployment-method apptainer conda
+            --resources mem_mb=110000
             --default-storage-provider fs
             --default-storage-prefix /mnt/snakemake/${{ github.event.repository.name }}
             --shared-fs-usage software-deployment persistence sources source-cache

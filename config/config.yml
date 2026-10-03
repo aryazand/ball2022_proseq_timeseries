@@ -112,7 +112,8 @@ mapping_stats:
       cmv: 236000
       human: 3130250755
       spodoptera: 400000000
-    extra: "--binSize 1 --normalizeUsing CPM --verbose"
+    normalizeUsing: "CPM"
+    extra: "--binSize 1 --verbose"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. Common Configs

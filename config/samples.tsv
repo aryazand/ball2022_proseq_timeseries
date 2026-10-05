@@ -1,9 +1,0 @@
-sample	description	accession	read1	read2
-mock_rep1	mock infection	SRR16301850		
-mock_rep2	mock infection	SRR16301851
-4hpi_rep1	4hpi HCMV in HFF	SRR16301853
-12hpi_rep1	12hpi HCMV in HFF	SRR16301855
-24hpi_rep1	24hpi HCMV in HFF	SRR16301857
-48hpi_rep1	48hpi HCMV in HFF	SRR16301859
-72hpi_rep1	72hpi HCMV in HFF	SRR16301861
-72hpi_PFA_rep1	72hpi + PFA HCMV in HFF	SRR10312763
